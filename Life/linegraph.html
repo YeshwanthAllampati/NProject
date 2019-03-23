@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Quicksand">
+<style type="text/css">
+
+#chart-container,#chart-c1,#chart-c2
+{
+
+width: 640px;
+height: auto;
+
+}
+
+body
+{
+font-family: Quicksand, sans-serif;
+
+}
+
+  .myt
+{
+	top:-20px;
+	width:100%;
+	background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+	
+	
+	
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
+
+#narn
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 800;
+	font-size: 140%;
+	
+	width: 100%;
+  padding: 10px;
+  border: 1px;
+  margin: 0; 
+	
+	
+}
+
+#title
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 700;
+	font-size: 120%;
+	color: yellow;
+ 
+	
+	width: 100%;
+  padding: 10px;
+  border: 1px;
+  margin-top: -10px; 
+	
+	
+}
+
+
+
+
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<script>
+$(document).ready(function(){
+		
+        $("input[name='b1']").click(function(){
+			
+            var radioValue = $("input[name='chooser']:checked").val();
+            if(radioValue=="event"){
+					
+				
+				
+				$('#Mydiv2').css('display','block');
+				$('#dis').prop('disabled', true);
+			
+                
+            }
+			if(radioValue=="dept")
+			{
+		
+					$('#Mydiv1').css('display','block');
+					$('#dis').prop('disabled', true);
+			
+			}
+        });
+        
+    });
+
+
+</script>
+<script type="text/javascript" src="js/lut.js"></script>
+<script type="text/javascript" src="js/tutL2.js"></script>
+<div class="myt">
+<center>
+<img src="untitled1.png" alt="Logo">
+<p id="narn">NARAYANA ENGINEERING COLLEGE :: GUDUR</p>
+<p id="title">A Periodic Departmental Activities Performance Analysing and Visualisation system</p>
+</center>
+</div>
+
+<center>
+  <table style="width:60%">
+  <tr>
+    <th><input type="radio" name="chooser" value="event" checked>EventWise Department Performance </th>
+    <th><input type="radio" name="chooser" value="dept"> DepartmentWise Event Performance</th> 
+    <th><input id="dis" type="button" name="b1" value="OK" class="btn btn-info btn-sm"></th>
+	<th><input  type="button" name="re" value="RELOAD" onclick="location.reload();" class="btn btn-primary btn-sm"></th>
+  </tr>
+  </table>
+  
+  
+  <br>
+  <div id="Mydiv3">
+	
+
+
+
+
+	
+	<div>
+  <div id="Mydiv1" style="display:none;">
+  <table style="width:30%">
+  <tr>
+  
+  <th>
+	<select class="dost1" name="deptwise">
+	<option value="" disabled selected>---Select the Department---</option>
+	<option>CSE</option>
+	<option>ECE</option>
+	<option>EEE</option>
+	<option>MECH</option>
+	<option>CIV</option>
+	<option>FED</option>
+	</select>
+	  <th><input type="button" class="btn btn-success btn-sm" onclick="ShowData1();" value="OK"></th>
+  </tr>
+  </th>
+  
+  </table>
+  </div>
+  <div id="Mydiv2" style="display:none;">
+  <table style="width:20%">
+  <tr>
+  
+  <th>
+	<select class="dost" name="eventwise">
+	<option disabled selected>---Select the Event---</option>
+	<option>GuestLecture</option>
+	<option>FacultyMeets</option>
+	<option>StudentMeets</option>
+	<option>CertificateCourse</option>
+	<option>BridgeCourse</option>
+	
+	</select>
+	  <th><input type="button" class="btn btn-success btn-sm" value="OK" onclick="ShowData();"></th>
+  </tr>
+  </th>
+  
+  </table>
+  </div>
+
+<br>
+  
+</center>
+<br>
+<center>
+<div id="chart-container">
+	<canvas id="mycanvas"></canvas>
+</div>
+	<br>
+</center>
+
+
+
+<div class="btn-group-vertical fixed-bottom">
+<div><button type="button" class="btn btn-primary" name="B2" onclick="window.location.href = 'shome.php';">HOME</button>
+</div>
+ <div><button type="button" class="btn btn-info" name="B1" onclick="window.location.href = 'http://localhost/newone/home.php'">Dashboard</button>
+</div>
+</div>
+</body>
+
+
+</html>

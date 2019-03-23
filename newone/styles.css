@@ -1,0 +1,191 @@
+body
+{
+background-image: url("freebay.png");
+font-family: Quicksand, sans-serif;
+}
+.myt
+{
+	top:-20px;
+	width:100%;
+	
+	background-color: #007bff;
+	
+	
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
+
+#narn
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 800;
+	font-size: 140%;
+	
+	width: 100%;
+  padding: 10px;
+  border: 1px;
+  margin: 0; 
+	
+	
+}
+
+#title
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 700;
+	font-size: 120%;
+	color: yellow;
+ 
+	
+	width: 100%;
+  padding: 10px;
+  border: 1px;
+  margin-top: -10px; 
+	
+	
+}
+
+.sidenav
+{
+	margin-top:50px;
+	position: relative;
+	top: -17px;
+	
+	page-break-inside: avoid;
+	width:30%;
+	background-color: #007bff;
+	 background-size: 150% auto;
+	
+}
+
+
+
+#t1
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 800;
+	font-size: 240%;
+	
+	width: 100%;
+  padding: 10px;
+  border: 5px;
+ 
+  margin-bottom: 5px;
+ padding-top:200px; 
+	
+	
+	
+}
+
+
+#t2
+{
+	font-family: Quicksand, sans-serif;
+    font-weight: 800;
+	font-size: 140%;
+	
+	color: white;
+	width: 100%;
+  padding: 10px;
+  border: 1px;
+  margin: 0
+	
+	
+	
+}
+
+#fav
+{
+	margin-left:80px;
+	color:cyan;
+	
+	
+	
+	
+}
+
+/*bb*/
+
+  .logincontent
+        {
+			font-family: Quicksand, sans-serif;
+		font-weight: 800;
+		font-size: 100%;
+	
+            position: absolute;
+            width: 500px;
+            height: 470px;
+            top: 75%;
+            left: 60%;
+            margin-top: -150px;
+            margin-left: -175px;
+            background: #007bff;
+            padding-top: 30px;
+        }
+        .loginheading
+        {
+            border-bottom: solid 1px #ECF2F5;
+            padding-left: 18px;
+            padding-bottom: 10px;
+            color: #ffffff;
+			font-size: 260%;
+            
+        }
+        label
+        {
+            color: #ffffff;
+            display: inline-block;
+            margin-left: 18px;
+            padding-top: 10px;
+			padding-bottom: 20px;
+            font-size: 15px;
+        }
+        input[type=text], input[type=password]
+        {
+            font-size: 14px;
+            padding-left: 10px;
+			
+            margin: 10px;
+            margin-top: 12px;
+            margin-left: 18px;
+            width: 300px;
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f5f5;
+            font-size: 14px;
+        }
+        input[type=checkbox]
+        {
+            margin-left: 18px;
+            margin-top: 30px;
+        }
+		
+		 .loginbtn
+        {
+            float: right;
+            margin-right: 20px;
+            margin-top: 20px;
+            padding: 6px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #07A8C3;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#07A8C3), to(#6EE4E8));
+            background-image: -moz-linear-gradient(top left 90deg, #07A8C3 0%, #6EE4E8 100%);
+            background-image: linear-gradient(top left 90deg, #07A8C3 0%, #6EE4E8 100%);
+            border-radius: 30px;
+            border: 1px solid #07A8C3;
+            cursor: pointer;
+        }
+        .loginbtn:hover
+        {
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+            background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+            background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+        }
